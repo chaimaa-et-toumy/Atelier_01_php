@@ -1,22 +1,22 @@
 <?php
 
 // declaration du variable
-$monNom = "ET-Toumy";
-$monPrenom  = "Chaimaa";
-$monAge = 20;
+$Last_name = "ET-Toumy";
+$First_name  = "Chaimaa";
+$Age = 20;
 
 // Affichage
 # ----------- echo ' ' -------------
 echo "// Affichage avec echo' ' <br> <br>";
-echo "My First name is ". $monPrenom ."<br>";
-echo "My last name is ". $monNom ."<br>";
-echo "My Age is ". $monAge ."<br> <br>";
+echo "My First name is ". $First_name  ."<br>";
+echo "My last name is ". $Last_name ."<br>";
+echo "My Age is ". $Age ."<br> <br>";
 
 # ----------- echo " " -------------
 echo "// Affichage avec echo\" \" <br> <br> ";
-echo "My First name is $monPrenom <br>";
-echo "My last name is $monNom <br>";
-echo "My Age is $monAge";
+echo "My First name is  $First_name <br>";
+echo "My last name is $Last_name <br>";
+echo "My Age is $Age";
 
 echo "<br> <br>";
 
@@ -24,9 +24,9 @@ echo "<br> <br>";
 echo "// Affichage avec syntaxe Heredoc <br> <br> ";
 
 $str1 = <<<Text1
-My first name is $monPrenom 
-My last name is  $monNom
-My Age is $monAge 
+My first name is $First_name
+My last name is  $Last_name
+My Age is $Age 
 Text1;
 echo nl2br($str1);
 
@@ -35,8 +35,8 @@ echo "<br> <br>";
 echo "// Affichage avec syntaxe Nowdoc  <br> <br> ";
 
 $str2 = <<<'Text2'
-My first name is $monPrenom 
-My last name is  $monNom
+My first name is $First_name
+My last name is  $Last_name
 My Age is $monAge 
 Text2;
 echo nl2br($str2);
